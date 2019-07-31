@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datasource-proxy-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-destination-source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transaction-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transaction-kafka/transaction-kafka-receive" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transaction-kafka/transaction-kafka-send" charset="UTF-8" />
+  </component>
+</project>

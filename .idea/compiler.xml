@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-rabbitmq" />
+        <module name="transaction-kafka-receive" />
+        <module name="dynamic-destination-source" />
+        <module name="transaction-kafka-send" />
+        <module name="datasource-proxy-springboot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="transcation-kafka-consumer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="datasource-proxy-springboot" options="-parameters" />
+      <module name="dynamic-destination-source" options="-parameters" />
+      <module name="my-samples" options="-parameters" />
+      <module name="spring-boot-rabbitmq" options="-parameters" />
+      <module name="transaction-kafka" options="-parameters" />
+      <module name="transaction-kafka-receive" options="-parameters" />
+      <module name="transaction-kafka-send" options="-parameters" />
+      <module name="transcation-kafka-consumer" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        example-topic-input:
+          destination: test-topic
+          group: stream-content-route
+#        example-topic-output:
+#          destination: test-topic
+      kafka:
+        binder:
+          brokers: 192.168.251.157
+          defaultBrokerPort: 9092
+server:
+  port: 0
