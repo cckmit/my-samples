@@ -1,1 +1,4 @@
 # spring-boot-rabbitmq
+
+# eventsourcing-cqrs-axon
+http://localhost:8080/actuator/info

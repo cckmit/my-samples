@@ -12,6 +12,8 @@
         <module>datasource-proxy-springboot</module>
         <module>transaction-kafka</module>
         <module>spring-boot-rabbitmq</module>
+        <module>eventsourcing-cqrs-axon</module>
+        <module>bases</module>
     </modules>
 
     <parent>
