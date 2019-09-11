@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sink-consumer
+  rabbitmq:
+    host: 192.168.251.157
+    port: 5673
+    username: admin
+    password: admin
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: inputgroup
+          destination: public-destination
+      rabbit:
+        bindings:
+          input:
+            consumer:
+              auto-bind-dlq: true
+
+server.port: 0

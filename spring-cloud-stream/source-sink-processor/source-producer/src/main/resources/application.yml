@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: source-producer
+  rabbitmq:
+    host: 192.168.251.157
+    port: 5673
+    username: admin
+    password: admin
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: public-destination
+
+server.port: 0

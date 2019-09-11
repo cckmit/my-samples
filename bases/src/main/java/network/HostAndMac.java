@@ -6,6 +6,7 @@ import org.springframework.util.StringUtils;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
+import java.net.UnknownHostException;
 import java.util.Enumeration;
 
 /**
@@ -57,8 +58,19 @@ public class HostAndMac {
         return hostAddress + ":" + macAddress.toString().toUpperCase();
     }
 
+    public String getIp(){
+        InetAddress localHost = null;
+        try {
+            localHost = Inet4Address.getLocalHost();
+        } catch (UnknownHostException e) {
+            log.error(e.getMessage(),e);
+        }
+        return localHost.getHostAddress();
+
+    }
+
 
     public static void main(String[] args) {
-        log.info("{}",new HostAndMac().getServiceKey());
+        log.info("{}",new HostAndMac().getIp());
     }
 }

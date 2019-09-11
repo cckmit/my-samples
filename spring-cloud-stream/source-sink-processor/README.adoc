@@ -1,0 +1,8 @@
+VM options
+
+```
+-Dspring.cloud.stream.bindings.input.group=inputgroup2
+-Dspring.cloud.stream.bindings.input.group=inputgroup1
+```
+
+同一个group的多实例能保障只一个实例进行消费
